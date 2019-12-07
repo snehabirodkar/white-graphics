@@ -39,9 +39,39 @@ a:focus{
 section{
     background: #fff;
 }
+
 /***************************************************************************************************************************
-                                                        General Button
+                                                        helper class
 ****************************************************************************************************************************/
+.m-10{
+    margin: 10px;
+}
+.m-t-70{
+    margin-top: 70px;
+}
+.m-b-30{
+    margin-bottom: 30px;
+}
+
+/***************************************************************************************************************************
+                                                        Content boxes
+****************************************************************************************************************************/
+.content-box-lg{
+    padding: 120px 0;
+}
+.content-box-md{
+    padding: 100px 0;
+}
+.content-box-sm{
+    padding: 90px 0;
+}
+
+
+
+
+/************************************************************************************
+                                        General Button
+*************************************************************************************/
 .btn-general{
     font-family: 'Raleway',sans-serif;
     border-radius: 30px;
@@ -93,9 +123,53 @@ section{
 #arrow-down:focus{
     color: #5c9320;
 }
-/***************************************************************************************************************************
-                                                        Home
-****************************************************************************************************************************/
+
+/**********************************************************************************
+                                     General HEading
+***********************************************************************************/
+.vertical-heading h5,
+.horizontal-heading h5{
+    color: #5c9320;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: 10px;
+   
+}
+.vertical-heading h5{
+     display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -55px;
+}
+.vertical-heading h2,
+.horizontal-heading h2{
+   
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 46px;
+}
+.vertical-heading h2{
+     margin: 0 0 0 35px;
+}
+.highlighted-heading{
+    color: #5c9320;
+    font-weight: 700;
+}
+.horizontal-heading{
+   text-align: center; 
+}
+.horizontal-heading h2{
+    margin: 0;
+}
+.horizontal-heading h5{
+    margin-bottom: 5px;
+}
+
+/***************************************************************************************
+                                         Home
+****************************************************************************************/
 #home{
     height: 100vh;
     background: none;
@@ -152,6 +226,72 @@ section{
     color: #5c9320;
     font-weight: 500;
 }
+
+/***************************************************************************************************************************
+                                                        About US Section
+****************************************************************************************************************************/
+#about-bottom img{
+    margin: 0 auto;
+}
+#about-02{
+    background: #f4f4f4;
+}
+.about-item{
+    background: #fff;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.about-item i{
+    font-size: 42px;
+}
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 45px;
+    background-color:  #5c9320;
+    height: 3px;
+    margin: 0 auto 20px auto;
+}
+/*Hover state*/
+
+.about-item:hover{
+    background-color: #5c9320;
+/*
+    TO FLIP THE ABOUT-ITEM DIV!
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+*/
+}
+.about-item:hover i,
+.about-item:hover p,
+.about-item:hover h3{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+/*Smooth transition*/
+.about-item p,
+.about-item h3{
+    transition: all .4s linear;
+}
+.about-item,
+.about-item hr,
+.about-item i{
+    transition: all .4s ease-in-out;
+}
+/*******************************************************************
+                    Line icon setting
+********************************************************************/
+[class*='lni-']{
+    display: inline-block;
+}
+
 
 /***************************************************************************************************************************
                                                         Loader
