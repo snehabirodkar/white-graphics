@@ -15,10 +15,12 @@
         White Smoke:         #f4f4f4
         White:               #fff
         Black:               #000   
-============================================ */
-/***************************************************************************************************************************
-                                                        GENERAL
-****************************************************************************************************************************/
+============================================ 
+*/
+/*******************************************************************************************************
+                                                        GENERAL SECTION
+*******************************************************************************************************/
+
 html,body{
     height: 100%;
     width: 100%;
@@ -40,38 +42,69 @@ section{
     background: #fff;
 }
 
-/***************************************************************************************************************************
-                                                        helper class
-****************************************************************************************************************************/
+/******************************************************************************************************
+                                              HELPER CLASS
+
+*******************************************************************************************************/
+
 .m-10{
     margin: 10px;
 }
-.m-t-70{
-    margin-top: 70px;
+.m-20{
+    margin: 20px;
 }
+.m-30{
+    margin: 30px;
+}
+.m-40{
+    margin: 40px;
+}
+.m-50{
+    margin: 50px;
+}
+.m-60{
+    margin: 60px;
+}
+.m-90{
+    margin: 90px;
+}
+
+.p-10{
+    margin: 10px;
+}
+.p-20{
+    margin: 20px;
+}
+.m-30{
+    margin: 30px;
+}
+.m-40{
+    margin: 40px;
+}
+.m-50{
+    margin: 50px;
+}
+.m-60{
+    margin: 60px;
+}
+.m-90{
+    margin: 90px;
+}
+
 .m-b-30{
     margin-bottom: 30px;
 }
 
-/***************************************************************************************************************************
-                                                        Content boxes
-****************************************************************************************************************************/
-.content-box-lg{
-    padding: 120px 0;
+.m-t-70{
+    margin-top: 70px;
 }
-.content-box-md{
-    padding: 100px 0;
-}
-.content-box-sm{
-    padding: 90px 0;
+.m-t-40{
+    margin-top: 40px;
 }
 
-
-
-
-/************************************************************************************
-                                        General Button
-*************************************************************************************/
+/******************************************************************************************************
+                                       General Button
+*******************************************************************************************************/
 .btn-general{
     font-family: 'Raleway',sans-serif;
     border-radius: 30px;
@@ -124,20 +157,19 @@ section{
     color: #5c9320;
 }
 
-/**********************************************************************************
-                                     General HEading
-***********************************************************************************/
+/*******************************************************************************************************
+                                    HEADING SECTION
+*******************************************************************************************************/
 .vertical-heading h5,
 .horizontal-heading h5{
     color: #5c9320;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    word-spacing: 10px;
-   
+    word-spacing: 9px;/*half rem.*/
 }
 .vertical-heading h5{
-     display: inline-block;
+    display: inline-block;
     transform: rotate(-90deg);
     position: relative;
     top: 60px;
@@ -145,20 +177,19 @@ section{
 }
 .vertical-heading h2,
 .horizontal-heading h2{
-   
     font-size: 40px;
     font-weight: 100;
     line-height: 46px;
 }
 .vertical-heading h2{
-     margin: 0 0 0 35px;
+        margin: 0 0 0 35px;
 }
-.highlighted-heading{
+.highlight-heading{
+    font-weight: 500;
     color: #5c9320;
-    font-weight: 700;
 }
 .horizontal-heading{
-   text-align: center; 
+    text-align: center;
 }
 .horizontal-heading h2{
     margin: 0;
@@ -166,10 +197,207 @@ section{
 .horizontal-heading h5{
     margin-bottom: 5px;
 }
+/****************************************************************************************************
+                                              ABOUT BOXES
+*****************************************************************************************************/
+#about-bottom img{
+    margin: 0 auto;
+}
+#about-02{
+    background: #f4f4f4;
+}
+.about-item{
+    background: #fff;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.about-item i{
+    font-size: 42px;
+}
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 45px;
+    background-color:  #5c9320;
+    height: 3px;
+    margin: 0 auto 20px auto;
+}
+/*hover state*/
+.about-item:hover{
+    background: #5c9320;
+    /* transform: rotateY(180deg);
+    transform-style: preserve-3d; */
+}
+.about-item:hover i,
+.about-item:hover p,
+.about-item:hover h3{
+    color: #fff;
+}
+.about-item:hover hr{
+    background: #fff;
+}
+.about-item:hover i{
+    transform: translateY(-30%);
+}
+/*smooty transition*/
+.about-item p,
+.about-item h3{
+    transition: all .4s linear;
+}
 
-/***************************************************************************************
-                                         Home
-****************************************************************************************/
+.about-item,
+.about-item i,
+.about-item hr{
+    transition: all .4s ease-in-out;
+}
+/************
+line icon setting
+***************/
+[class*='lni']{
+    display: inline-block;
+}
+
+/****************************************************************************************************
+                                              TEAM SECTION
+*****************************************************************************************************/
+.team-member{
+    position: relative;
+}
+.team-member:hover .team-member-overlay{
+    opacity: 1;
+}
+.team-member-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33,34,38,.9);
+    overflow: hidden;
+    opacity: 0;
+    transform: all .3s linear;
+}
+.team-member-info{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+
+.team-member-info h5{
+    color:#5c9320;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.team-member-info p{
+    color: #fff;
+    font-weight: 200;
+}
+
+
+/****************************************************************************************************
+                                              social BOXES
+*****************************************************************************************************/
+ul.social-icons{
+    padding: 0;
+}
+ul.social-icons li{
+    display: inline-block;
+}
+ul.social-icons li a{
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 100%;
+    color: #fff;
+    transition: all .3s linear;
+}
+ul.social-icons li.fb-icon a:hover{
+    background: #3b5998;
+    border-color: transparent;
+}
+ul.social-icons li.twitter-icon a:hover{
+    background: #00ACED;
+    border-color: transparent;
+}
+ul.social-icons li.google-plus-icon a:hover{
+    background: #dd4B39;
+    border-color: transparent;
+}
+
+/****************************************************************************************************
+                                              OWL SLIDER BUTTONS
+*****************************************************************************************************/
+.owl-theme .owl-nav [class*=owl-]{
+    color: #212226;
+    font-size: 40px;
+    background: none;
+    margin: 0;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+    color: #5c9320;
+}
+
+/****************************************************************************************************
+                                              SKILLS
+*****************************************************************************************************/
+
+.skill h4{
+    font-weight: normal;
+}
+.progress{
+    height: 12px;
+    border-radius: 50px;
+    background-color: #efefef;
+    overflow: visible;
+}
+.progress-bar{
+    background: #5c9320;
+    background: linear-gradient(to right,#5c9320 0%,#63c600 51%, #5C9320 100%);
+    border-radius: 50px;
+    position: relative;
+}
+.progress-bar span{
+    position: absolute;
+    top: -40px;
+    left: 95%;
+    background: #212226;
+    padding: 5px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+.progress-bar span:before{
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    left: 34%;
+    top: 30px;
+}
+/****************************************************************************************************
+                                              CONTENT BOXES
+*****************************************************************************************************/
+
+.content-box-lg{
+    padding: 120px 0;
+}
+.content-box-md{
+    padding: 100px 0;
+}
+.content-box-sm{
+    padding: 90px 0;
+}
+
+/****************************************************************************************************
+                                              Home
+*****************************************************************************************************/
 #home{
     height: 100vh;
     background: none;
@@ -227,75 +455,9 @@ section{
     font-weight: 500;
 }
 
-/***************************************************************************************************************************
-                                                        About US Section
-****************************************************************************************************************************/
-#about-bottom img{
-    margin: 0 auto;
-}
-#about-02{
-    background: #f4f4f4;
-}
-.about-item{
-    background: #fff;
-    padding: 80px 30px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-}
-.about-item i{
-    font-size: 42px;
-}
-.about-item h3{
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.about-item hr{
-    width: 45px;
-    background-color:  #5c9320;
-    height: 3px;
-    margin: 0 auto 20px auto;
-}
-/*Hover state*/
-
-.about-item:hover{
-    background-color: #5c9320;
-/*
-    TO FLIP THE ABOUT-ITEM DIV!
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);
-*/
-}
-.about-item:hover i,
-.about-item:hover p,
-.about-item:hover h3{
-    color: #fff;
-}
-.about-item:hover hr{
-    background-color: #fff;
-}
-.about-item:hover i{
-    transform: translateY(-20px);
-}
-/*Smooth transition*/
-.about-item p,
-.about-item h3{
-    transition: all .4s linear;
-}
-.about-item,
-.about-item hr,
-.about-item i{
-    transition: all .4s ease-in-out;
-}
-/*******************************************************************
-                    Line icon setting
-********************************************************************/
-[class*='lni-']{
-    display: inline-block;
-}
-
-
-/***************************************************************************************************************************
-                                                        Loader
-****************************************************************************************************************************/
+/****************************************************************************************************
+                                           Loader
+*****************************************************************************************************/
 .loader{
     /*Make full screen*/
     height: 100%;
