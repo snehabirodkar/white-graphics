@@ -92,16 +92,20 @@ section{
 }
 
 .m-b-30{
-    margin-bottom: 30px;
+    margin-bottom: 30px!important;
 }
-
+.m-b-50{
+    margin-bottom: 50px!important;
+}
 .m-t-70{
-    margin-top: 70px;
+    margin-top: 70px!important;
 }
 .m-t-40{
-    margin-top: 40px;
+    margin-top: 40px!important;
 }
-
+.m-t-30{
+    margin-top: 30px!important;
+}
 /******************************************************************************************************
                                        General Button
 *******************************************************************************************************/
@@ -454,7 +458,204 @@ ul.social-icons li.google-plus-icon a:hover{
     color: #5c9320;
     font-weight: 500;
 }
+/****************************************************************************************************
+                                            Statements 
+*****************************************************************************************************/
+#statement{
+    background: url('../img/tech/tech-statement.jpg')no-repeat fixed center;
+    background-size: cover;
+}
+#statement .content-box-lg{
+    background-color: rgba(0,0,0,0.4);
+}
+#statement h3{
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+}
+#statement p{
+    color: #5c9320;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+/****************************************************************************************************
+                                    Services Section         
+*****************************************************************************************************/
+/*Service 01 section*/
+#service-01 img{
+    margin: 80px 0;
+}
+.service .icon{
+    font-size: 42px;
+    transition: all .4s linear;
+}
+.service:hover .icon{
+    color: #5c9320;
+    transform: translateX(-20px)
+}
+.service h5{
+    color: #5c9320;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    transition: all 0.3s linear;
+}
+.service:hover h5{
+    color: #212226;
+}
+.service h3{
+    margin: 0 0 8px 0;
+}
+.service p {
+    margin: 0;
+    line-height: normal;
+}
+/*SERVICE 02 SECTION*/
+#services-02{
+    background: #f4f4f4;
+}
+#services-tabs ul li{
+    padding: 5px 30px;
+}
+#services-tabs ul li.r-tabs-state-active a{
+    color: #5c9320;
+    font-weight: 700;
+    border-bottom: 3px solid #5c9320;
+    transition: border-color .3s linear;
+}
+#services-tabs ul li a{
+    font-family: 'raleway',sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+}
+.service-tab .service-tab-bg{
+    background: #fff;
+    padding: 50px 30px;
+    min-height: 480px;
+/*    position: relative;*/
+}
+.service-tab h2{
+    font-size: 48px;
+    color: #ccc;
+    font-weight: 100;
+    margin: 0 0 20px 0;
+/*
+    position: absolute;
+    left: 50px;
+    top: 30px;
+*/
+}
+.service-tab img{
+    min-width: 100%;
+}
+.service-tab h3{
+    font-size: 32px;
+}
+.service-tab .col-md-6{
+    padding: 0;
+}
 
+/****************************************************************************************************
+                                           tweakiing bootstrap
+*****************************************************************************************************/
+.row.no-gutters [class*=col-]{
+    padding: 0;
+}
+
+
+/****************************************************************************************************
+                                           portfolio
+*****************************************************************************************************/
+.portfolio-item{
+   overflow: hidden; 
+  position: relative;
+    margin: 0;
+}
+.portfolio-item img{
+    transition: all .4s ease;
+}
+.portfolio-item-overlay{
+    position: absolute;
+    background: rgba(92,147,32,0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.portfolio-overlay-details{
+ position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio-overlay-details h3{
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translateY(-20%);
+    transition: all .4s ease;
+}
+.portfolio-overlay-details span{
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 10px auto;
+}
+.portfolio-overlay-details p{
+    font-size: 17px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 0.5rem;
+    margin: 0;
+    padding: 0;
+     transform: translateY(100%);
+    transition: all .4s ease;
+}
+/* portfolio hover*/
+.portfolio-item:hover img{
+    transform: scale(1.2);
+}
+.portfolio-item:hover .portfolio-item-overlay{
+    opacity: 1;
+}
+.portfolio-item:hover .portfolio-overlay-details p,
+.portfolio-item:hover .portfolio-overlay-details h3{
+    transform: translateY(0);
+}
+
+/**ISOTOPE FILTRS*/
+#isotope-filters button{
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: 0;
+    background: transparent;
+    padding-right: 35px;
+}
+#isotope-filters button span{
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: solid 3px transparent;
+    transition: border-color .4s ease;
+}
+#isotope-filters button.active span{
+    color: #5c9320;
+    border-bottom: solid 3px #5c9320;
+}
 /****************************************************************************************************
                                            Loader
 *****************************************************************************************************/
@@ -605,3 +806,5 @@ ul.social-icons li.google-plus-icon a:hover{
         transform: translateY(95px);
     }
 }
+/*content me unicode fontawesome me unicode ka code content me dalna padta hai
+/u likhna padta hai*/
