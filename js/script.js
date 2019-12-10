@@ -296,6 +296,7 @@ $(window).on('load',function(){
 
 
 
+
 //marker = new google.maps.Marker({
 //    map: map,
 //    draggable: true,
