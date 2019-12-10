@@ -90,7 +90,12 @@ section{
 .m-90{
     margin: 90px!important;
 }
-
+.m-t-0{
+    margin-top: 0 !important;
+}
+.m-b-0{
+    margin-bottom: 0 !important;
+}
 .m-b-30{
     margin-bottom: 30px!important;
 }
@@ -105,6 +110,9 @@ section{
 }
 .m-t-30{
     margin-top: 30px!important;
+}
+.p-b-100{
+    padding-bottom: 120px!important;
 }
 /******************************************************************************************************
                                        General Button
@@ -346,7 +354,10 @@ ul.social-icons li.google-plus-icon a:hover{
     background: none;
     color: #5c9320;
 }
-
+#testimonial-slider.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+    color: #5c9320;
+}
 /****************************************************************************************************
                                               SKILLS
 *****************************************************************************************************/
@@ -397,6 +408,9 @@ ul.social-icons li.google-plus-icon a:hover{
 }
 .content-box-sm{
     padding: 90px 0;
+}
+.content-box-xs{
+    padding: 30px 0;
 }
 
 /****************************************************************************************************
@@ -656,6 +670,275 @@ ul.social-icons li.google-plus-icon a:hover{
     color: #5c9320;
     border-bottom: solid 3px #5c9320;
 }
+/*********************** 
+  TESTIMONIALS SECTION
+************************/
+#testimonials{
+    background-color: #F4F4F4;
+}
+
+
+#testimonial-slider{
+    background-color: #5c9320;
+    transform: translateY(-150px);
+}
+.testimonial{
+    padding: 20px 45px 0 45px;
+    color: #FFF;
+}
+.testimonial .stars{
+    font-size: 20px;
+}
+
+.testimonials h3{
+    font-size: 32px;
+    line-height: 35px;
+    margin: 20px 0 10px;
+}
+.testimonial p{
+    line-height: normal;
+    font-weight: 300;
+}
+.testimonial .author-name-des p{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.testimonial .author-name-des{
+    margin-top: 10px;
+}
+
+
+/*********************** 
+      PRICING SECTION
+************************/
+.pricing-table{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.pricing-table:hover{
+    background: #5c9320;
+    color: #FFF;
+    
+}
+.pricing-table .type{
+    padding-bottom: 10px;
+    border-bottom: solid 1px #E0E0E0;
+}
+.pricing-table .type h4{
+    color: #5c9320;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: all .3s linear;
+}
+.pricing-table .price{
+    padding-bottom: 20px;
+    border-bottom: solid 1px #E0E0E0; 
+}
+.pricing-table .price h2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    position: relative;
+    margin: 0 0 0 25px;
+}
+.pricing-table .price span{
+    font-family: 'Raleway',sans-serif; 
+}
+span.dollar{
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+span.per-month{
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    border: -15px;
+}
+.pricing-table .price p{
+    line-height: normal;
+    font-weight: 300;
+    margin: 0;
+}
+ul.package{
+    list-style: none;
+    padding: 20px 0;
+}
+ul.package li{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+}
+ul.package li i{
+    padding-right: 20px;
+}
+.pricing-table:hover h4{
+    color: #FFF;
+}
+.pricing-table .btn{
+    margin: 0;
+}
+.pricing-table:hover .btn-green{
+    background-color: #FFF;
+    color: #212226;
+}
+.pricing-table .btn-green:hover{
+    background-color: #212226;
+    color: #FFF;
+}
+.pricing-table.pricing-table-black{
+    background: #212226;
+    color: #FFF;
+}
+.pricing-table.pricing-table-black .type h4{
+    color: #FFF;
+}
+.pricing-table.pricing-table-black:hover{
+    background: #5c9320;
+    transform: scale(1.1);
+}
+.pricing-table.pricing-table-up{
+    position: relative;
+    top: -20px;
+}
+
+
+
+
+/*********************** 
+      STATS SECTION
+************************/
+
+#stats{
+    background: url('../img/stats/stats-bg.jpg')no-repeat fixed center;
+    background-size: cover;
+}
+
+#stats .vertical-heading h2{
+    color: #fff;
+
+}
+
+.stats-item{
+    background: rgba(61,68,68,0.6);
+    padding: 25px 50px;
+    border-radius: 5px;
+    transition: all .4s linear;
+}
+
+.stats-item i{
+    font-size: 42px;
+    color: #5c9320;
+    margin: 0 0 5px 0;
+    transition: all .4s linear;
+}
+
+.stats-item:hover{
+    background: #5c9320;
+}
+
+.stats-item:hover i{
+    color: #fff;
+    transform: translateY()
+}
+
+.stats-item p{
+    color: #fff;
+}
+
+.stats-item h3{
+    color: #fff;
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+/*********************** 
+      CLIENT SECTION
+************************/
+#clients h5{
+    /*font-size: 16px;*/
+    text-transform: uppercase;
+}
+#clients h2{
+/*    font-size: 48px;*/
+    text-transform: capitalize;
+}
+#clients cols{
+    margin: 0 15px;
+}
+#client-list img{
+    width: 130px;
+    height: 97px;
+}
+
+/*********************** 
+      CONTACT SECTION
+************************/
+
+#contacts{
+    width: 100%;
+}
+
+#map{
+    height: 500px;
+}
+
+/*********************** 
+      BLOG SECTION
+************************/
+#blog{
+    background: #f4f4f4;
+}
+.blog{
+    background: #fff;
+    padding: 0 3.5rem;
+    border-radius: 5px;
+    box-shadow:  0 0 10px rgba(0,0,0,0.15);
+    margin: 0 1.5rem;
+}
+
+
+.blog p,.blog a,.blog hr{
+    padding: 0.5rem 0;
+}
+
+.blog a{
+    padding: 1.2rem 0;
+    color: #5c9320;
+}
+
+.blog img{
+    border-radius: 100%;
+}
+
+
+.blog h4,
+{
+    padding: 0rem 0;
+    margin: 0.5rem;
+    font-weight: 400;
+}
+.blog p{
+    display: inline-block;
+    
+}
+.blog hr{
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+
 /****************************************************************************************************
                                            Loader
 *****************************************************************************************************/
