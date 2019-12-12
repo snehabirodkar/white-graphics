@@ -87,17 +87,17 @@ $(window).on('load',function(){
                         OWL CAROUSEL JS
 *********************************************************/
 $(document).ready(function(){
-  $("#team-right").owlCarousel({
-      items:2,
-      autoplay:true,
-      margin:20,
-      loop:true,
-      nav:true,
-      smartSpeed:1000,
-      autoplayHoverPause:true,
-      dots:false,
-      navText:['<i class="lni-chevron-left-circle"></i>','<i class="lni-chevron-right-circle"></i>']
-  });
+    $("#team-right").owlCarousel({
+        items: 2,
+        autoplay: true,
+        margin: 20,
+        loop: true,
+        nav: true,
+        smartSpeed: 700,
+        autoplayHoverPause: true,
+        dots: false,
+        navText: ['<i class="lni-chevron-left-circle"></i>','<i class="lni-chevron-right-circle"></i>']
+    });
 });
 
 /*********************************************************
